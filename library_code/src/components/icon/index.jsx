@@ -4,8 +4,11 @@ const Icon = ({
   value,
   // theme = "outline", // outline, filled, twoTone
   theme = "filled", // filled, brand
-  size,
-  color,
+  size,    //number
+  color,   //string
+  rotate,  //number
+  spin = false,
+  style,
   onClick,
   ...rest
 }) => {
@@ -23,26 +26,36 @@ const Icon = ({
     switch (theme) {
       case "filled":
         return "fas";
-      default:
+      case "brand": 
         return "fab";
+      default:
+        alert(`Invalid theme: ${theme}`);
+        return "";
     }
   };
 
   const classNames = [
     "inula-icon",
-    color ? `inula-icon-${color}` : "",
     iconTheme(theme),
     value ? `fa-${value}` : "",
+    spin ? "inula-icon-spin" : ""  // 新增动画类
   ]
     .filter(Boolean)
     .join(" ");
+
+  const styles = {
+    ...style,
+    ...(rotate && { transform: `rotate(${rotate}deg)` }),
+    fontSize: `${size}px`,
+    color: `${color}`,
+  }
 
   console.log("Icon props:", rest);
 
   return (
     <i
       className={classNames}
-      style={{ fontSize: `${size}px`, color: `${color}` }}
+      style={styles}
       onClick={onClick}
       {...rest}
     ></i>

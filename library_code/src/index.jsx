@@ -26,7 +26,6 @@ function App() {
           <Icon />
         </div>
       </div>
-
     </div>
   );
 }
