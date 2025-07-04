@@ -45,4 +45,7 @@
 
   /* demo 深色背景 */
   --inula-demo-dark-bg: #222;
+
+  /* icon 默认颜色 */
+  --inula-icon-default: #555555;
 } 

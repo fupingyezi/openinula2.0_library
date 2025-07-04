@@ -1,0 +1,6 @@
+.inula-icon {
+    font-size: 24px;
+    /* color: #555555; */
+    color: var(--inula-icon-default);
+}
+

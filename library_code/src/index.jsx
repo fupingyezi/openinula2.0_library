@@ -1,6 +1,8 @@
 import { render } from '@openinula/next';
 import './index.css';
+import './colors.css';
 import Button from './components/button/demo.jsx';
+import Icon from './components/icon/demo.jsx';
 
 function App() {
   return (
@@ -14,6 +16,14 @@ function App() {
         <p className="hero-subtitle animate__animated animate__fadeInUp">Button 组件</p>
         <div className="hero-content">
           <Button />
+        </div>
+        <p className="hero-subtitle animate__animated animate__fadeInUp">Icon 组件</p>
+        <div className="hero-content">
+          <Icon />
+        </div>
+        <p className="hero-subtitle animate__animated animate__fadeInUp">Icon 组件</p>
+        <div className="hero-content">
+          <Icon />
         </div>
       </div>
 
