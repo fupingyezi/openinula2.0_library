@@ -50,7 +50,7 @@ const Icon = ({
     color: `${color}`,
   }
 
-  console.log("Icon props:", rest);
+  // console.log("Icon props:", rest);
 
   return (
     <i

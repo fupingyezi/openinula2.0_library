@@ -3,6 +3,7 @@ import './index.css';
 import './colors.css';
 import Button from './components/button/demo.jsx';
 import Icon from './components/icon/demo.jsx';
+import Checkbox from './components/checkbox/demo.jsx';
 
 function App() {
   return (
@@ -13,17 +14,13 @@ function App() {
         <div className="hero-content">
           <Button />
         </div>
-        <p className="hero-subtitle animate__animated animate__fadeInUp">Button 组件</p>
-        <div className="hero-content">
-          <Button />
-        </div>
         <p className="hero-subtitle animate__animated animate__fadeInUp">Icon 组件</p>
         <div className="hero-content">
           <Icon />
         </div>
-        <p className="hero-subtitle animate__animated animate__fadeInUp">Icon 组件</p>
+        <p className="hero-subtitle animate__animated animate__fadeInUp">Checkbox 组件</p>
         <div className="hero-content">
-          <Icon />
+          <Checkbox />
         </div>
       </div>
     </div>
