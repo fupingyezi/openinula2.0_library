@@ -1,18 +1,22 @@
-# openinula2.0 组件库
+# openinula2.0 组件库——inula2-ui
 
 [![NPM version](https://img.shields.io/npm/v/inulaUI.svg?style=flat)](https://npmjs.org/package/inulaUI)
 [![NPM downloads](http://img.shields.io/npm/dm/inulaUI.svg?style=flat)](https://npmjs.org/package/inulaUI)
 
 ## 项目简介
+
 openinula2.0 组件库是基于 [openinula](https://github.com/openinula/openinula) 的现代化 React UI 组件库，包含丰富的基础组件，适用于企业级中后台和移动端应用开发。组件库采用现代化设计风格，支持亮暗主题切换，具备良好的可扩展性和易用性。
 
 ## 开发说明
-进入library目录
+
+进入 library 目录
+
 ```bash
 npm install
 npm run dev
 ```
-组件统一小写并放在components目录下，目录结构为（以Button组件为例）:
+
+组件统一小写并放在 components 目录下，目录结构为（以 Button 组件为例）:
 
 ```
 button/
@@ -21,7 +25,6 @@ button/
 ├── index.jsx   # 按钮组件
 └── index.css   # 按钮样式
 ```
-
 
 ## 目录结构
 
@@ -55,11 +58,12 @@ openInula2.0_Library/
 ```
 
 ## 贡献指南
+
 1. Fork 本仓库并创建分支。
 2. 提交代码前请确保通过 lint 检查和单元测试。
 3. 提交 PR 时请详细描述变更内容。
 4. 欢迎补充文档、修复 bug 或新增组件。
 
-
 ## License
+
 MIT
